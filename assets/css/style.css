@@ -1,0 +1,91 @@
+/* elements */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    background-color: black;
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+/* classes */
+.crystal-img {
+    height: 200px;
+    width: 200px;
+}
+
+
+/* ids */
+#crystal-div {
+    margin: auto;
+}
+
+#gypsy-img {
+    height: 100%;
+    width: 100%;
+}
+
+/* button styles */
+
+#play {
+    color: green;
+    background-color: white;
+}
+
+#reset {
+    color: red;
+    background-color: white;
+}
+
+/*
+@media only screen and (min-width: 340px) and (max-width: 480px) {
+    p {
+        font-size: 1.0em;
+        word-break: keep-all;
+    }
+
+    button {
+        width: 40%;
+        margin: 2% 2%;
+        padding: 2%;
+    }
+
+    .boundary {
+        width: 85%;
+    }
+
+    .crystal {
+        width: 20%;
+        padding: 4%;
+    }
+
+}
+
+@media only screen and (max-width: 340px) {
+    p {
+        font-size: 0.8em;
+        word-break: keep-all;
+    }
+
+    button {
+        width: 40%;
+        margin: 2% 5%;
+        padding: 2%;
+    }
+
+    #container {
+        border: none;
+        border-top: 3px groove orchid;
+    }
+
+    .boundary {
+        width: 100%;
+    }
+
+    .gem {
+        max-width: 20%;
+        padding: 2%;
+    }
+}
+*/
