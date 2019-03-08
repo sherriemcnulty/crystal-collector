@@ -24,7 +24,34 @@ body {
     width: 100%;
 }
 
+#header {
+    width: 66%;
+}
+
 @media only screen and (max-width: 770px) {
     #gypsy-img {
         display: none;
     }
+
+    #header {
+        width: 75%;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        font-size: 0.8em;
+    }
+
+    .crystal-img {
+        width: 15%;
+    }
+
+    #gypsy-img {
+        display: none;
+    }
+
+    #header {
+        width: 90%;
+    }
+}
