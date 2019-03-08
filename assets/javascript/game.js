@@ -22,17 +22,6 @@ $(document).ready(function () {
 
     function addClickEvents() {
 
-        // "reset" and "play" buttons do the same thing, 
-        // but it seems more intuitive to have both
-        $("#reset").click(function () {
-            startGame();
-        });
-
-        $("#play").click(function () {
-            //console.clear();
-            startGame();
-        });
-
         // click events for crystal balls
         $("#crystal1").click(function () {
             var addend = parseInt($("#crystal1").val());
