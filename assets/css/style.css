@@ -16,6 +16,15 @@ body {
 }
 
 /* ids */
+#go-img {
+    width: 100px;
+}
+
 #gypsy-img {
     width: 100%;
 }
+
+@media only screen and (max-width: 770px) {
+    #gypsy-img {
+        display: none;
+    }
