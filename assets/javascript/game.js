@@ -100,7 +100,7 @@ $(document).ready(function () {
 
     //  MAIN PROGRAM
 
-    $('#go-btn').click(function () {
+    $('#start').click(function () {
         // Game starts on a click event
         game.initTargetSum();
         game.initBalls();
