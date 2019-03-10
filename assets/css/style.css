@@ -7,17 +7,21 @@ body {
     padding-top: 20px;
     background-color: black;
     font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    /*background-image: url("../images/gypsy.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
+
 }
 
 /* classes */
 .crystal-img {
     height: auto;
-    width: 20%;
+    width: 15%;
 }
 
 /* ids */
-#go-img {
-    width: 100px;
+#go-ball {
+    width: 50px;
 }
 
 #gypsy-img {

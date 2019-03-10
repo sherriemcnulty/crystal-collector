@@ -16,40 +16,41 @@ $(document).ready(function () {
     var TARGET;
     var SUM;
 
-    // main function calls
-    addClickEvents();
-    startGame();
+    // click event to start game
+    $('#go-ball').click(function () {
+        gameInit();
+    });
 
     function addClickEvents() {
 
         // click events for crystal balls
         $("#crystal1").click(function () {
             var addend = parseInt($("#crystal1").val());
-            keepScore(addend);
+            play(addend);
         });
 
         $("#crystal2").click(function () {
             var addend = parseInt($("#crystal2").val());
-            keepScore(addend);
+            play(addend);
         });
 
         $("#crystal3").click(function () {
             var addend = parseInt($("#crystal3").val());
-            keepScore(addend);
+            play(addend);
         });
 
         $("#crystal4").click(function () {
             var addend = parseInt($("#crystal4").val());
-            keepScore(addend);
+            play(addend);
         });
 
     } // end addClickEvents()
 
 
-    function startGame() {
+    function gameInit() {
 
         // reset message
-        $("#message").text("Channel your psychic powers . . . . .");
+        $("#message").text("");
 
         // generate random target
         var min = 19;
@@ -91,40 +92,38 @@ $(document).ready(function () {
                     $("#crystal4").prop('disabled', false);
                     console.log("initVal: crystal4 = " + $("#crystal4").val());
                     break;
-
             } // end switch
-
         } // end for i
 
-    } // startGame()
+        addClickEvents();
+    } // gameInit()
 
-    function keepScore(addend) {
+    function play(addend) {
 
         SUM += addend;
 
         if (SUM > TARGET) {
 
             $("#sum").text("Total: " + SUM);
-            $("#message").text("Oops! Try again.");
             $("#crystal1").prop('disabled', true);
             $("#crystal2").prop('disabled', true);
             $("#crystal3").prop('disabled', true);
             $("#crystal4").attr('disabled', true);
+            $("#message").text("Oops! Try again.");
 
         } else if (SUM == TARGET) {
 
             $("#sum").text("Total: " + SUM);
-
-            $("#message").text("Yeah! You're a winner!")
             $("#crystal1").prop('disabled', true);
             $("#crystal2").attr('disabled', true);
             $("#crystal3").attr('disabled', true);
             $("#crystal4").attr('disabled', true);
+            $("#message").text("Yeah! You did it!")
 
         } else {
             $("#sum").text("Total: " + SUM);
         }
 
-    } // end keepScore()
+    } // end play()
 
 }); // end document.ready()
