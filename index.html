@@ -22,62 +22,65 @@
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
-</head>
-
 <body>
 
     <section class="container m-auto">
         <div class="row text-center">
+
             <div class="col-md-12">
                 <h1><img id="header" class="mx-2" src="assets/images/header.gif" alt="gem-collector"></h1>
             </div>
-        </div>
+
+        </div> <!-- row -->
         <div class="row w3-left-align">
             <div class="col-md-3">
-                <img id="gypsy-img" src="assets/images/gypsy.gif">
+                <img id="gypsy-img" src="assets/images/gypsy.gif" alt="gypsy looking into a crystal ball">
             </div> <!-- col -->
 
             <div class="col-md-9 m-auto text-white">
-                <div class="col-md-12">
-                    <p>
-                        Random values are assigned to each of the crystal balls at the beginning of the game. Add up
-                        points by clicking on the
-                        crystal balls. Win by reaching the target score without going over it.
-                        &nbsp;&nbsp;
-                        <span class="font-weight-bold"><a id="start" href="#">Click here to start.</a></span>
-                    </p>
-                    <p>
-                        <span class="font-weight-bold">Target:&nbsp;</span>
-                        <span class="font-weight-normal" id="target"></span>
-                        <br>
-                        <span class="font-weight-bold">Total:&nbsp;</span>
-                        <span class="w3-left-align font-weight-normal" id="sum"></span>
-                        <br>
-                    </p>
-                    <p id="message" class="font-weight-bold font-italic text-danger">
-                        Enjoy!
-                    </p>
-                </div> <!-- col -->
-            </div> <!-- row -->
 
-        </div> <!-- col -->
-        </div> <!-- row -->
+                <p>
+                    <!-- rules -->
+                    Random values are assigned to each of the crystal balls at the beginning of the game. Add
+                    up
+                    points by clicking on the
+                    crystal balls. Win by reaching the target score without going over it.
+                    &nbsp;&nbsp;
+                    <span class="font-weight-bold"><a id="start" href="#">Click here to start.</a></span>
+                </p> <!-- rules -->
+
+                <p>
+                    <!-- totals -->
+                    <span class="font-weight-bold">Target:&nbsp;</span>
+                    <span class="font-weight-normal" id="target"></span>
+                    <br>
+                    <span class="font-weight-bold">Total:&nbsp;</span>
+                    <span class="w3-left-align font-weight-normal" id="sum"></span>
+                    <br>
+                </p> <!-- totals -->
+
+                <p id="message" class="font-weight-bold font-italic text-danger">
+                    Enjoy!
+                </p>
+
+            </div><!-- col -->
+        </div><!-- row -->
 
         <div class="row">
             <div class="col-md-12 text-center">
+
                 <div id="crystal-container">
-                    <input type="image" class="crystal-img mx-2" id="crystal1" value="" src="assets/images/crystal1.gif"
-                        alt="unicorn crystal ball" />
 
-                    <input type="image" class="crystal-img mx-2" id="crystal2" value="" src="assets/images/crystal2.gif"
-                        alt="pizza crystal ball" />
+                    <input type="image" class="crystal-img mx-2" id="crystal1" src="assets/images/crystal1.gif" alt="unicorn crystal ball" />
 
-                    <input type="image" class="crystal-img mx-2" id="crystal3" value="" src="assets/images/crystal3.gif"
-                        alt="cat crystal ball" />
+                    <input type="image" class="crystal-img mx-2" id="crystal2" src="assets/images/crystal2.gif" alt="pizza crystal ball" />
 
-                    <input type="image" class="crystal-img mx-2" id="crystal4" value="" src="assets/images/crystal4.gif"
-                        alt="fairy crystal ball" />
-                </div>
+                    <input type="image" class="crystal-img mx-2" id="crystal3" src="assets/images/crystal3.gif" alt="cat crystal ball" />
+
+                    <input type="image" class="crystal-img mx-2" id="crystal4" src="assets/images/crystal4.gif" alt="fairy crystal ball" />
+
+                </div> <!-- crystal container -->
+
             </div> <!-- col -->
         </div> <!-- row -->
     </section> <!-- content -->
