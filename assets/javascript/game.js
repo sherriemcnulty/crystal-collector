@@ -24,7 +24,6 @@ $(document).ready(function () {
 
             // reset sum 
             this.sum = 0;
-            console.log(`sum = ${this.sum}`);
             $("#sum").text(parseInt(this.sum));
 
             // setup random target
